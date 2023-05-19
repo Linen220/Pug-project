@@ -1,0 +1,32 @@
+-var caja(
+	
+)
+-var enlaces=['Acerca','Noticias','Contacto']
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet",href='css/ejercicio-pug.css')
+	body
+		include components/head.pug
+		section.intro
+			.intro__imagen
+				img(src="./images/imagen.png", alt="") 
+			.intro__contenido
+				h2 Titulo Principal
+				p
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					| Lorem ipsum dolor sit amet consectetur adipisicing.
+					span Lorem ipsum dolor sit amet consectetur. 
+				a.boton Leer Mas
+		main.contenido
+			+caja('imagen.png',titulos[1],'Lorem ipsum dolor sit amet')
+			+caja('imagen.png',titulos[2],'Lorem ipsum dolor sit amet')
+			+caja('imagen.png',titulos[3],'Lorem ipsum dolor sit amet')
+		
+		include components/footer.pug
+			
